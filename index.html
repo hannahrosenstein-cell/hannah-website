@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Hannah Rosenstein — San Francisco real estate advisor."
+    />
+    <title>Hannah Rosenstein | San Francisco Real Estate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600&family=Prata&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="site-shell">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__photo" aria-hidden="true">
+          <img
+            class="hero__image"
+            src="assets/hero-street.jpg"
+            alt=""
+          />
+        </div>
+        <div class="hero__wash hero__wash--dark" aria-hidden="true"></div>
+        <div class="hero__wash hero__wash--warm" aria-hidden="true"></div>
+        <div class="hero__wash hero__wash--glow" aria-hidden="true"></div>
+        <div class="grain grain--hero" aria-hidden="true"></div>
+
+        <header class="site-header">
+          <nav class="desktop-nav reveal delay-2" aria-label="Main navigation">
+            <a href="#connect">About</a>
+            <a href="#connect">Approach</a>
+            <a href="#connect">Neighborhoods</a>
+            <a href="#connect">Journal</a>
+            <a href="#connect">Perspective</a>
+          </nav>
+
+          <button
+            class="menu-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <span>Menu</span>
+            <span class="menu-button__line" aria-hidden="true"></span>
+          </button>
+        </header>
+
+        <div class="hero__content">
+          <div class="hero__inner">
+            <div class="eyebrow reveal delay-3">
+              <span class="eyebrow__line" aria-hidden="true"></span>
+              <span>DRE 02442775</span>
+            </div>
+
+            <h1 id="hero-title" class="hero__name reveal delay-4">
+              Hannah<br />Rosenstein
+            </h1>
+
+            <div class="hero__role reveal delay-5">
+              <p>San Francisco native.<br />Real estate advisor.</p>
+            </div>
+
+            <p class="hero__tagline reveal delay-6">The city, made home.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="connect" class="connect" aria-labelledby="connect-title">
+        <div class="grain grain--connect" aria-hidden="true"></div>
+
+        <div class="connect__inner">
+          <div class="connect__row">
+            <figure class="portrait-block reveal delay-2">
+              <img
+                src="assets/hannah-portrait.jpg"
+                alt="Portrait of Hannah Rosenstein"
+              />
+            </figure>
+
+            <div class="connect__copy">
+              <p class="connect__label reveal delay-1">Perspective</p>
+              <h2 id="connect-title" class="connect__statement reveal delay-3">
+                I've spent my career helping shape the places people move through every day.
+                Today, I help people find the place they'll come home to in the city that shaped me.
+              </h2>
+              <a class="conversation-link reveal delay-4" href="mailto:hannah@rosensteinsf.com">
+                <span>Start a conversation</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+
+            <nav class="connect__nav reveal delay-4" aria-label="Footer navigation">
+              <a href="#connect">About</a>
+              <a href="#connect">Journal</a>
+              <a href="#connect">Instagram</a>
+              <a href="mailto:hannah@rosensteinsf.com">Email</a>
+            </nav>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+      <div class="mobile-menu__header">
+        <a class="wordmark" href="/">Hannah&nbsp;Rosenstein</a>
+        <button class="menu-close" type="button">Close</button>
+      </div>
+      <nav class="mobile-menu__links" aria-label="Mobile navigation">
+        <a href="#connect">About</a>
+        <a href="#connect">Approach</a>
+        <a href="#connect">Neighborhoods</a>
+        <a href="#connect">Journal</a>
+        <a class="mobile-menu__accent" href="#connect">Perspective</a>
+      </nav>
+    </div>
+  </body>
+</html>
