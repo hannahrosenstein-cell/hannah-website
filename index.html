@@ -15,7 +15,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
   </head>
   <body>
     <main class="site-shell">
@@ -23,7 +22,7 @@
         <div class="hero__photo" aria-hidden="true">
           <img
             class="hero__image"
-            src="hero-street.png"
+            src="assets/hero-street.png"
             alt=""
           />
         </div>
@@ -33,30 +32,13 @@
         <div class="grain grain--hero" aria-hidden="true"></div>
 
         <header class="site-header">
-          <nav class="desktop-nav reveal delay-2" aria-label="Main navigation">
-            <a href="#connect">About</a>
-            <a href="#connect">Approach</a>
-            <a href="#connect">Neighborhoods</a>
-            <a href="#connect">Journal</a>
-            <a href="#connect">Perspective</a>
-          </nav>
-
-          <button
-            class="menu-button"
-            type="button"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <span>Menu</span>
-            <span class="menu-button__line" aria-hidden="true"></span>
-          </button>
         </header>
 
         <div class="hero__content">
           <div class="hero__inner">
             <div class="eyebrow reveal delay-3">
               <span class="eyebrow__line" aria-hidden="true"></span>
-              <span>DRE 02442775</span>
+              <span>REALTOR®</span>
             </div>
 
             <h1 id="hero-title" class="hero__name reveal delay-4">
@@ -64,61 +46,55 @@
             </h1>
 
             <div class="hero__role reveal delay-5">
-              <p>San Francisco native.<br />Real estate advisor.</p>
+              <p>San Francisco native. Real estate advisor.</p>
             </div>
-
-            <p class="hero__tagline reveal delay-6">The city, made home.</p>
           </div>
         </div>
       </section>
 
-      <section id="connect" class="connect" aria-labelledby="connect-title">
+      <section id="connect" class="connect" aria-label="Personal introduction">
         <div class="grain grain--connect" aria-hidden="true"></div>
 
         <div class="connect__inner">
           <div class="connect__row">
-            <figure class="portrait-block reveal delay-2">
-              <img
-                src="hannah-portrait.png"
-                alt="Portrait of Hannah Rosenstein"
-              />
-            </figure>
+            <div class="portrait-column reveal delay-2">
+              <figure class="portrait-block">
+                <img
+                  src="assets/hannah-portrait.png"
+                  alt="Portrait of Hannah Rosenstein"
+                />
+              </figure>
+
+              <div class="brokerage-block" aria-label="Brokerage credentials">
+                <p>DRE #02442775</p>
+                <p>Vanguard Properties</p>
+              </div>
+            </div>
 
             <div class="connect__copy">
-              <p class="connect__label reveal delay-1">Perspective</p>
-              <h2 id="connect-title" class="connect__statement reveal delay-3">
+              <p class="connect__statement reveal delay-3">
                 I've spent my career helping shape the places people move through every day.
                 Today, I help people find the place they'll come home to in the city that shaped me.
-              </h2>
-              <a class="conversation-link reveal delay-4" href="mailto:hannah@rosensteinsf.com">
-                <span>Start a conversation</span>
-                <span aria-hidden="true">→</span>
-              </a>
+                As a San Francisco native, I have a deep appreciation for the neighborhoods,
+                architecture, and character that make each part of the city feel uniquely like home.
+              </p>
             </div>
 
             <nav class="connect__nav reveal delay-4" aria-label="Footer navigation">
-              <a href="#connect">About</a>
-              <a href="#connect">Journal</a>
+              <div class="connect__direct">
+                <a href="mailto:hello@hannahrosenstein.com">hello@hannahrosenstein.com</a>
+                <a href="tel:4152145141">415.214.5141</a>
+              </div>
               <a href="#connect">Instagram</a>
-              <a href="mailto:hannah@rosensteinsf.com">Email</a>
             </nav>
+
+            <div class="brokerage-block brokerage-block--mobile reveal delay-4" aria-label="Brokerage credentials">
+              <p>DRE #02442775</p>
+              <p>Vanguard Properties</p>
+            </div>
           </div>
         </div>
       </section>
     </main>
-
-    <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
-      <div class="mobile-menu__header">
-        <a class="wordmark" href="/">Hannah&nbsp;Rosenstein</a>
-        <button class="menu-close" type="button">Close</button>
-      </div>
-      <nav class="mobile-menu__links" aria-label="Mobile navigation">
-        <a href="#connect">About</a>
-        <a href="#connect">Approach</a>
-        <a href="#connect">Neighborhoods</a>
-        <a href="#connect">Journal</a>
-        <a class="mobile-menu__accent" href="#connect">Perspective</a>
-      </nav>
-    </div>
   </body>
 </html>
